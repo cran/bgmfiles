@@ -1,3 +1,10 @@
+# bgmfiles 0.0.6
+
+* added added Final_CAM_Boxes_8.bgm from Thomas Ihde
+
+* updated install notes
+
+
 # bgmfiles 0.0.5
 
 * expanded description and added examples, thanks to CRAN
