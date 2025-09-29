@@ -1,21 +1,29 @@
-[![Linux Build Status](https://travis-ci.org/AustralianAntarcticDivision/bgmfiles.svg?branch=master)](https://travis-ci.org/AustralianAntarcticDivision/bgmfiles) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/AustralianAntarcticDivision/bgmfiles?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/bgmfiles) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/bgmfiles)](https://cran.r-project.org/package=bgmfiles) [![Coverage Status](https://img.shields.io/codecov/c/github/AustralianAntarcticDivision/bgmfiles/master.svg)](https://codecov.io/github/AustralianAntarcticDivision/bgmfiles?branch=master)
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/bgmfiles)](https://CRAN.R-project.org/package=bgmfiles)
+<!-- badges: end -->
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-BGM files for Atlantis
-======================
 
-A raw-data package with example .bgm files (box geometry model) for Atlantis ecosystem model.
+# BGM files for Atlantis
 
-Atlantis is a deterministic, biogeochemical, whole-of-ecosystem model: <http://atlantis.cmar.csiro.au/>.
+A raw-data package with example .bgm files (box geometry model) for
+Atlantis ecosystem model.
 
-**PLEASE NOTE:** this is not an official source of BGM for use in Atlantis.
+Atlantis is a deterministic, biogeochemical, whole-of-ecosystem model:
+<http://atlantis.cmar.csiro.au/>.
 
-See <https://github.com/mdsumner/rbgm> for an R package to read these files and work with the box geometry.
+**PLEASE NOTE:** this is not an official source of BGM for use in
+Atlantis.
 
-See <https://github.com/AustralianAntarcticDivision/box-geometry-models> for the project that collects the files used in this package.
+See <https://github.com/AustralianAntarcticDivision/rbgm> for an R
+package to read these files and work with the box geometry.
 
-Installation
-------------
+See <https://github.com/AustralianAntarcticDivision/box-geometry-models>
+for the project that collects the files used in this package.
+
+## Installation
 
 Install from CRAN:
 
@@ -30,8 +38,7 @@ Install the develop version from Github using `devtools`.
 devtools::install_github("AustralianAntarcticDivision/bgmfiles")
 ```
 
-Usage
------
+## Usage
 
 List the available raw files available in this package.
 
@@ -62,20 +69,30 @@ print(basename(afiles))
 #> [1] "antarctica_28.bgm" "antarctica_99.bgm"
 ```
 
-This package exists as a data package to install example files, there is just one function `bgmfiles` that runs file finding functions:
+This package exists as a data package to install example files, there is
+just one function `bgmfiles` that runs file finding functions:
 
 ``` r
 list.files(system.file("extdata", package = "bgmfiles"), pattern = NULL, full.names = TRUE, recursive = TRUE)
 ```
 
-We don't need to load or attach the package to find these files, but using the installation mechanism is very convenient for R use.
+We don’t need to load or attach the package to find these files, but
+using the installation mechanism is very convenient for R use.
 
-Contribute!
-===========
+# Contribute!
 
 If you would like to contribute example BGM files or to the package:
 
--   contribute to the repository of example files <https://github.com/AustralianAntarcticDivision/box-geometry-models>
--   submit a suggestion or issue for this package <https://github.com/AustralianAntarcticDivision/bgmfiles/issues>
+-   contribute to the repository of example files
+    <https://github.com/AustralianAntarcticDivision/box-geometry-models>  
+-   submit a suggestion or issue for this package
+    <https://github.com/AustralianAntarcticDivision/bgmfiles/issues>
 
 or just get in touch directly via email.
+
+## Code of Conduct
+
+Please note that the bgmfiles project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

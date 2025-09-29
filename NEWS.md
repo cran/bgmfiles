@@ -1,3 +1,9 @@
+# bgmfiles 0.1.0
+
+* updated use of testthat, thanks Hadley Wickham. 
+
+* added static docs
+
 # bgmfiles 0.0.6
 
 * added added Final_CAM_Boxes_8.bgm from Thomas Ihde
